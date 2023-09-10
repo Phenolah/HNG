@@ -3,7 +3,7 @@ from django.utils import timezone
 import datetime
 
 def api(request):
-    slack_name = request.GET.get('slack_name', 'Phenolah')
+    slack_name = request.GET.get('slack_name', 'example_name')
     track = request.GET.get('track', 'Backend')
     current_day = timezone.now().strftime('%A')
     utc_time = timezone.now() + datetime.timedelta(minutes=2)
