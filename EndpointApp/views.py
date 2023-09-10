@@ -10,7 +10,7 @@ def api(request):
     response = {
         "slack_name": slack_name,
         "current_day": current_day,
-        "current_utc_day": utc_time.strftime('%Y-%m-%dT%H:%M:%SZ'),
+        "utc_time": utc_time.strftime('%Y-%m-%dT%H:%M:%SZ'),
         "track": track,
         "github_file_url": "https://github.com/Phenolah/HNG/blob/main/EndpointApp/views.py",
         "github_repo_url": "https://github.com/Phenolah/HNG",
